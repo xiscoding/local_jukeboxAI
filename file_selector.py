@@ -3,7 +3,7 @@ from tkinter import filedialog
 import os
 import re
 #INITIAL AUDIO DIRECTORY
-INITIAL_DIR = '/home/xdoestech/Desktop/music_audio/beats_rap/'
+INITIAL_DIR = 'THIS SHOULD BE THE PATH TO THE FOLDER CONTAINING THE AUDIO SAMPLES YOU WOULD LIKE TO USE'
 
 class FileSelectionDialog:
   def __init__(self):
@@ -36,6 +36,7 @@ class FileSelectionDialog:
     selected_files = filedialog.askopenfilenames(initialdir=INITIAL_DIR, title='Select files')
     # Extract the file names from the file paths and join them with newlines
     file_names=[]
+    #NOTE: REPLACE/LAMBDA
     #https://stackoverflow.com/questions/6116978/how-to-replace-multiple-substrings-of-a-string/58814507#58814507
     #https://stackoverflow.com/questions/59072514/efficiently-make-many-multiple-substitutions-in-a-string/59072515#59072515
     mrep = lambda s, d: s if not d else mrep(s.replace(*d.popitem()), d)
