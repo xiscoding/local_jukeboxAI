@@ -1,0 +1,44 @@
+https://vaclavkosar.com/ml/Tokenization-in-Machine-Learning-Explained
+Tokenization is cutting input data into meaningful parts that can be *embedded* into a vector space.latent vector:
+    -embedding tokens: map tokens to their representations
+    --input tokenized
+    --tokens embedded
+    -Step by step pool the sequences of embeddings into shorter sequences, 
+    until we get a single full contextual data representation for the output.
+
+quantize: https://en.wikipedia.org/wiki/Vector_quantization
+- It is done by finding the nearest group with the data dimensions available, 
+then predicting the result based on the values for the missing dimensions, 
+assuming that they will have the same value as the group's centroid.
+---digital music processing technology, quantization is the studio-software process of transforming performed musical notes, 
+which may have some imprecision due to expressive performance, 
+to an underlying musical representation that eliminates the imprecision. 
+The process results in notes being set on beats and on exact fractions of beats.
+---Quantization, in mathematics and digital signal processing, 
+is the process of mapping input values from a large set (often a continuous set) to output values in a (countable) smaller set, 
+often with a finite number of elements. 
+Rounding and truncation are typical examples of quantization processes. 
+Quantization is involved to some degree in nearly all digital signal processing, 
+as the process of representing a signal in digital form ordinarily involves rounding. 
+Quantization also forms the core of essentially all lossy compression algorithms. 
+---Vector quantization (VQ) is a classical quantization technique from signal processing
+that allows the modeling of probability density functions by the distribution of prototype vectors. 
+It was originally used for data compression.
+It works by dividing a large set of points (vectors) into groups having approximately the same number of points closest to them. Each group is represented by its centroid point, as in k-means and some other clustering algorithms. 
+
+https://www.dsprelated.com/freebooks/sasp/Choice_Hop_Size.html
+https://towardsdatascience.com/all-you-need-to-know-to-start-speech-processing-with-deep-learning-102c916edf62
+hop lengths-
+length of non-intersecting portion of window length.
+
+codebook collapse,
+wherein all encodings get mapped to a single or few em-
+bedding vectors while the other embedding vectors in the
+codebook are not used, reducing the information capacity
+of the bottleneck
+
+spectral components-is any of the waves that range outside the interval of frequencies assigned to a signal.
+
+https://cs.stackexchange.com/questions/76647/what-is-meant-by-the-term-prior-in-machine-learning
+learn a prior- learn some initial parameters/pairings about the data 
+https://www.lesswrong.com/posts/SL9mKhgdmDKXmxwE4/learning-the-prior

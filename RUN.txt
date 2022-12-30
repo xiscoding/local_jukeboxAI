@@ -1,0 +1,21 @@
+libffi7 error:
+-https://askubuntu.com/questions/1286772/libffi-so-7-cannot-open-shared-object-file-no-such-file-or-directory
+
+apex:
+-https://pypi.org/project/apex/
+
+av:
+-https://pypi.org/project/av/
+
+mpi4py:
+-https://mpi4py.readthedocs.io/en/stable/intro.html#what-is-mpi
+
+Failed to initialize NCCL:
+-https://www.paperclipmaximizer.ai/jukeboxfix.html
+
+
+Quitting:
+-https://superuser.com/questions/243460/what-to-do-when-ctrl-c-cant-kill-a-process
+---Ctrl+Z: pause a process.
+---Ctrl+C: politely ask the process to shut down now.
+---Ctrl+\: mercilessly kill the process that is currently in the foreground
