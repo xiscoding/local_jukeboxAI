@@ -4,7 +4,7 @@
 [Official github](https://github.com/openai/jukebox)
 
 ### INSTALL COMMANDS
-
+```
 conda create --name jukebox 
 conda activate jukebox
 conda install mpi4py=3.0.3 # if this fails, try: pip install mpi4py\==3.0.3
@@ -17,7 +17,7 @@ pip install -e .
 conda install av=7.0.01 -c conda-forge 
 pip install ./tensorboardX
 pip install apex
-
+```
 ### Install trouble shoot
 
 **UnicodeEncodeError: 'ascii' codec can't encode character '\xe9' in position 13: ordinal not in range(128)**
