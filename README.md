@@ -1,12 +1,55 @@
-# local_jukeboxAI
-The jukebox AI code base with some additional files to make running locally on a machine easier
 
-Please follow initial installations instructions provided by openAI: https://github.com/openai/jukebox
+## Step 1:
+### install jukeboxAI from official github
+[Official github](https://github.com/openai/jukebox)
 
-After following the instructions above:<br>
---move the files in this repo into the local_jukeboxAI repo<br>
---change the INITIAL_DIR path in the file_seltor.py file<br>
---change the parameters in the runsample, runprompted.py files as needed<br>
+### INSTALL COMMANDS
 
-ENJOY!
+conda create --name jukebox 
+conda activate jukebox
+conda install mpi4py=3.0.3 # if this fails, try: pip install mpi4py\==3.0.3
+conda install pytorch torchvision cudatoolkit -c pytorch
+git clone https://github.com/openai/jukebox.git
+cd jukebox
+pip install -r requirements.txt
+pip install -e .
 
+conda install av=7.0.01 -c conda-forge 
+pip install ./tensorboardX
+pip install apex
+
+### Install trouble shoot
+
+**UnicodeEncodeError: 'ascii' codec can't encode character '\xe9' in position 13: ordinal not in range(128)**
+PYTHONIOENCODING=UTF-8
+https://github.com/pypa/pip/issues/10219
+SOLUTIONS:
+- reduce sample_length_in_seconds
+- reduce n_samples
+
+
+**torchvision=0.5.0 is not available through conda:**
+__Option 1: use pip__
+[Can not install torchvision 0.5.0 using conda](https://discuss.pytorch.org/t/can-not-install-torchvision-0-5-0-using-conda/176542)
+Used [pip install torchvision\==0.5.0](https://pypi.org/project/torchvision/0.5.0/) instead of conda
+
+**torchvision=0.3 is available**
+__Option 2: use torchvision=0.3__
+
+**ImportError: libffi.so.7: cannot open shared object file: No such file or directory**
+`sudo apt install libffi7`
+https://askubuntu.com/questions/1286772/libffi-so-7-cannot-open-shared-object-file-no-such-file-or-directory
+#libffi
+
+**RuntimeError: cublas runtime error : the GPU program failed to execute at /tmp/pip-req-build-pb3z3zl3/aten/src/THC/THCBlas.cu:315**
+Install newest versions 
+
+## Step 2: 
+## install local_jukeboxAI 
+[Official github](https://github.com/xiscoding/local_jukeboxAI.git)
+
+
+## Step 3:
+### copy files from jukeboxAI into local_jukeboxAI
+
+ #jukeboxAI  
