@@ -47,7 +47,9 @@ Install newest versions
 ## Step 2: 
 ## install local_jukeboxAI 
 [Official github](https://github.com/xiscoding/local_jukeboxAI.git)
-
+``` bash
+git clone https://github.com/xiscoding/local_jukeboxAI.git
+```
 
 ## Step 3:
 ### copy files from jukeboxAI into local_jukeboxAI
