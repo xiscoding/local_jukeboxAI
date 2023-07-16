@@ -1,10 +1,13 @@
 #use this as the launchpad for sample.py
 import os
 import datetime
-from file_selector import FileSelectionDialog, INITIAL_DIR
+from file_selector import FileSelectionDialog
+
+INITIAL_DIR='/home/xdoestech/audio_center/audio_samples/'
+
 #model to be used 
     #1b_lyrics, 5b, 5b_lyrics
-MODEL = '1b_lyrics'
+MODEL = '5b_lyrics'
 x = datetime.datetime.now()
 
 #name of the project
@@ -20,25 +23,25 @@ selections = dialog.get_file_names_string()
 AUDIO_IN = f'{selections}'
 print(AUDIO_IN)
 
+# prompt_length_in_seconds
 PROMPT_LENGTH = 12
 
 #generate first sample_length_in_seconds seconds from total length total_sample_length_in_seconds
-SAMPLE_LENGTH = 20
+SAMPLE_LENGTH = 48
 TOTAL_SAMPLE_LENGTH = 180
 
 #sample rate (5.5 Samples, jukebox whitepaper)"improved fidelity by using 44khz"
 SAMPLE_RATE = 44100
 
 #number of samples to be generated at once
-N_SAMPLES=6
+N_SAMPLES=3
 
 #the length of jumps between samples
 HOP_FRACTION='0.5,0.5,0.125'
 
+PATH_TO_SAMPLYPY='/home/xdoestech/audio_center/ai/jukebox/jukebox/sample.py'
 
-os.system("cd ~/jukebox")
-
-os.system(f"python jukebox/sample.py --model={MODEL}\
+os.system(f"python {PATH_TO_SAMPLYPY} --model={MODEL}\
                                                           --name={NAME}\
                                                           --levels={LEVELS}\
                                                           --mode={MODE}\
