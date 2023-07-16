@@ -1,0 +1,3 @@
+# Ignore folders that start with "promted" or "sample"
+promted*
+sample*
