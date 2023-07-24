@@ -24,7 +24,7 @@ AUDIO_IN = f'{selections}'
 print(AUDIO_IN)
 
 # prompt_length_in_seconds
-PROMPT_LENGTH = 12
+PROMPT_LENGTH = 24
 
 #generate first sample_length_in_seconds seconds from total length total_sample_length_in_seconds
 SAMPLE_LENGTH = 48

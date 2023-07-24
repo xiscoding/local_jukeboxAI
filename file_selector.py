@@ -3,7 +3,7 @@ from tkinter import filedialog
 import os
 import re
 #INITIAL AUDIO DIRECTORY
-INITIAL_DIR = 'THIS SHOULD BE THE PATH TO THE FOLDER CONTAINING THE AUDIO SAMPLES YOU WOULD LIKE TO USE'
+INITIAL_DIR = '/home/xdoestech/audio_center/audio_samples/'
 
 class FileSelectionDialog:
   def __init__(self):
