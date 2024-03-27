@@ -25,15 +25,13 @@ N_SAMPLES=6
 #the length of jumps between samples
 HOP_FRACTION='0.5,0.5,0.125'
 
-
-os.system("cd ~/jukebox")
-
-os.system(f"python jukebox/sample.py --model={MODEL}\
-                                                          --name={NAME}\
-                                                          --levels={LEVELS}\
-                                                          --sample_length_in_seconds={SAMPLE_LENGTH}\
-                                                          --total_sample_length_in_seconds={TOTAL_SAMPLE_LENGTH}\
-                                                          --sr={SAMPLE_RATE}\
-                                                          --n_samples={N_SAMPLES}\
-                                                          --hop_fraction={HOP_FRACTION}\
-                                                          ")
+PATH_TO_SAMPLYPY='/home/xdoestech/audio_center/ai/jukebox/jukebox/sample.py'
+os.system(f"python {PATH_TO_SAMPLYPY} --model={MODEL}\
+                                        --name={NAME}\
+                                        --levels={LEVELS}\
+                                        --sample_length_in_seconds={SAMPLE_LENGTH}\
+                                        --total_sample_length_in_seconds={TOTAL_SAMPLE_LENGTH}\
+                                        --sr={SAMPLE_RATE}\
+                                        --n_samples={N_SAMPLES}\
+                                        --hop_fraction={HOP_FRACTION}\
+                                        ")
