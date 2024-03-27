@@ -5,6 +5,7 @@
 
 ### INSTALL COMMANDS
 
+```
 conda create --name jukebox python=3.7.5
 conda activate jukebox
 conda install mpi4py=3.0.3 # if this fails, try: pip install mpi4py==3.0.3
