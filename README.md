@@ -5,10 +5,10 @@
 
 ### INSTALL COMMANDS
 
-conda create --name jukebox 
+conda create --name jukebox python=3.7.5
 conda activate jukebox
-conda install mpi4py=3.0.3 # if this fails, try: pip install mpi4py\==3.0.3
-conda install pytorch torchvision cudatoolkit -c pytorch
+conda install mpi4py=3.0.3 # if this fails, try: pip install mpi4py==3.0.3
+conda install pytorch=1.4 torchvision=0.5 cudatoolkit=10.0 -c pytorch
 git clone https://github.com/openai/jukebox.git
 cd jukebox
 pip install -r requirements.txt
@@ -52,4 +52,8 @@ Install newest versions
 ## Step 3:
 ### copy files from jukeboxAI into local_jukeboxAI
 
- #jukeboxAI  
+## RUNNING THE CODE
+### runprompted.py 
+    - Generates a continuation from sample audio file(s)
+    - uses a file selector gui 
+    - run and follow prompts

@@ -1,6 +1,7 @@
 # Ignore folders that start with "promted" or "sample"
-promted*
+prompted*
 sample*
 utils*
 file_selector_bard.py
 file_selector_gpt.py
+audio_samples

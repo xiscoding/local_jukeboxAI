@@ -24,11 +24,12 @@ AUDIO_IN = f'{selections}'
 print(AUDIO_IN)
 
 # prompt_length_in_seconds
-PROMPT_LENGTH = 12
+PROMPT_LENGTH = 24
 
 #generate first sample_length_in_seconds seconds from total length total_sample_length_in_seconds
 SAMPLE_LENGTH = 48
-TOTAL_SAMPLE_LENGTH = 180
+
+TOTAL_SAMPLE_LENGTH = 360
 
 #sample rate (5.5 Samples, jukebox whitepaper)"improved fidelity by using 44khz"
 SAMPLE_RATE = 44100
