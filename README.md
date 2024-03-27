@@ -17,7 +17,7 @@ pip install -e .
 conda install av=7.0.01 -c conda-forge 
 pip install ./tensorboardX
 pip install apex
-
+```
 ### Install trouble shoot
 
 **UnicodeEncodeError: 'ascii' codec can't encode character '\xe9' in position 13: ordinal not in range(128)**
@@ -47,7 +47,9 @@ Install newest versions
 ## Step 2: 
 ## install local_jukeboxAI 
 [Official github](https://github.com/xiscoding/local_jukeboxAI.git)
-
+``` bash
+git clone https://github.com/xiscoding/local_jukeboxAI.git
+```
 
 ## Step 3:
 ### copy files from jukeboxAI into local_jukeboxAI
