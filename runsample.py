@@ -3,7 +3,7 @@ import os
 import datetime
 #model to be used 
     #1b_lyrics, 5b, 5b_lyrics
-MODEL = '1b_lyrics'
+MODEL = '5b_lyrics'
 x = datetime.datetime.now()
 
 #name of the project

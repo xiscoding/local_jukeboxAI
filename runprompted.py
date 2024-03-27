@@ -5,14 +5,10 @@ from file_selector import FileSelectionDialog
 
 INITIAL_DIR='/home/xdoestech/audio_center/audio_samples/'
 
-from file_selector import FileSelectionDialog
-
-INITIAL_DIR='/home/xdoestech/audio_center/audio_samples/'
-
 #model to be used 
     #1b_lyrics, 5b, 5b_lyrics
 MODEL = '5b_lyrics'
-MODEL = '5b_lyrics'
+
 x = datetime.datetime.now()
 
 #name of the project
